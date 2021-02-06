@@ -22,6 +22,6 @@ public class TestTaekwondoin {
         cinta.precisionDePatada = "Bajo";
         cinta.velocidadDeGolpe = "Bajo";
         cinta.velocidadDePatada = "Bajo";
-        System.out.println(cinta.mostrarCaracteristicas());
+        System.out.println(cinta);
     }
 }

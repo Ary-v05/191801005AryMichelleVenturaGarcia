@@ -15,9 +15,10 @@ public class Taekwondoin {
     public int potenciaDePatada, potenciaDeGolpe, danioDeGolpe, danioDePatada;
    
     //Metodos
-    public String mostrarCaracteristicas(){
+    @Override
+    public String toString() {
         
-    return "El Taekwondoin es cinta " + cinta+ " danio de golpes  " +danioDeGolpe+ " danio de Patada " +danioDePatada+ " potencia " +potenciaDeGolpe+ " potencia de Patada  " +potenciaDePatada+"precicion De golpe "+precisionDeGolpe+"precision de patada "+precisionDePatada + " velocidad de golpes"+velocidadDeGolpe+" velocidad de patada"+velocidadDePatada;
+    return "El Taekwondoin es cinta " + cinta+ ",danio de golpes  " +danioDeGolpe+ ",danio de Patada " +danioDePatada+ ",potencia de golpe" +potenciaDeGolpe+ ",potencia de Patada  " +potenciaDePatada+",precicion De golpe "+precisionDeGolpe+",precision de patada "+precisionDePatada + ",velocidad de golpes"+velocidadDeGolpe+",velocidad de patada"+velocidadDePatada;
             
     
     }
