@@ -21,9 +21,9 @@ public class Chocolates {
     }
     
     //Constructor 
-    public Chocolates (String nombreChocolate, String tipo, int cantidad, double precio){
+    public Chocolates (String nombreChocolate, String ingredientes, int cantidad, double precio){
         this.nombreChocolate = nombreChocolate;
-        this.ingredientes = tipo;
+        this.ingredientes = ingredientes;
         this.cantidad = cantidad;
         this.precio = precio;
         
