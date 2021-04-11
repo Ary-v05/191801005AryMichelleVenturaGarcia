@@ -8,7 +8,7 @@
  *
  * @author vegav
  */
-public class Usuario {
+public class Usuarios {
     private int id;
     private String nombreUsuario, contraseña, fechaDeAlta;
     private boolean status;
@@ -53,10 +53,10 @@ public class Usuario {
         this.status = status;
     }
 
-    public Usuario() {
+    public Usuarios() {
     }
 
-    public Usuario(int id, String nombreUsuario, String contraseña, String fechaDeAlta, boolean status) {
+    public Usuarios(int id, String nombreUsuario, String contraseña, String fechaDeAlta, boolean status) {
         this.id = id;
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
@@ -66,7 +66,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", nombreUsuario=" + nombreUsuario + ", contrase\u00f1a=" + contraseña + ", fechaDeAlta=" + fechaDeAlta + ", status=" + status + '}';
+        return "Usuario{" + "id=" + id + ", nombreUsuario=" + nombreUsuario + ", contrasenia" + contraseña + ", fechaDeAlta=" + fechaDeAlta + ", status=" + status + '}';
     }
     
     
