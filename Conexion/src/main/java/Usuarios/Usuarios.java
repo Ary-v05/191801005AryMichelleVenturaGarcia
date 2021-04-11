@@ -3,40 +3,51 @@ package Usuarios;
 
 /**
  *
- * @author ntnrc
+ * @author vegav
  */
 public class Usuarios {
-    private int id;
+    private int id, stat;
     private String nombreUsuario,contraseña,fechaDeAlta;
-    private boolean status;
 
     public Usuarios() {
         this.id = 0;
         this.nombreUsuario = "";
         this.contraseña = "";
         this.fechaDeAlta = "";
-        this.status = false;
+        this.stat = 0;
     }
-    public Usuarios(int id, String nombreUsuario, String contraseña, String fechaDeAlta, boolean status) {
+    public Usuarios(int id, String nombreUsuario, String contraseña, String fechaDeAlta, int stat) {
         this.id = id;
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
         this.fechaDeAlta = fechaDeAlta;
-        this.status = status;
+        this.stat = stat;
     }
-    public Usuarios( String nombreUsuario, String contraseña) {
+    public Usuarios(String nombreUsuario, String contraseña) {
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
     }
+    public Usuarios(int id, String nombreUsuario, String contraseña, int stat) {
+        this.id = id;
+        this.nombreUsuario = nombreUsuario;
+        this.contraseña = contraseña;
+        this.stat = stat;
+    }
+    public Usuarios(int id, String nombreUsuario, String contraseña) {
+        this.id = id;
+        this.nombreUsuario = nombreUsuario;
+        this.contraseña = contraseña;
+    }    
     public Usuarios(int id) {
-        this.id = id;
-        
+        this.id = id;     
     }
-    public Usuarios(int id, String nombreUsuario, String contraseña, boolean status) {
-        this.id = id;
-        this.nombreUsuario = nombreUsuario;
-        this.contraseña = contraseña;
-        this.status = status;
+
+    public void setStat(int stat) {
+        this.stat = stat;
+    }
+
+    public int getStat() {
+        return stat;
     }
 
     public int getId() {
@@ -54,11 +65,7 @@ public class Usuarios {
     public String getFechaDeAlta() {
         return fechaDeAlta;
     }
-
-    public boolean isStatus() {
-        return status;
-    }
-
+    
     public void setId(int id) {
         this.id = id;
     }
@@ -75,16 +82,11 @@ public class Usuarios {
         this.fechaDeAlta = fechaDeAlta;
     }
 
-    public void setStatus(boolean status) {
-        this.status = status;
-    }
-
     @Override
     public String toString() {
-        return  nombreUsuario ;
-    }
+        return nombreUsuario;
+    }    
     public String imprimir() {
-        return "usuarios{" + "id=" + id + ", nombreUsuario=" + nombreUsuario + ", contrase\u00f1a=" + contraseña + ", fechaDeAlta=" + fechaDeAlta + ", status=" + status + '}';
-    }
-    
+        return "Usuarios" + "id=" + id + ", stat=" + stat + ", nombreUsuario=" + nombreUsuario + ", contraseña" + contraseña + ", fechaDeAlta=" + fechaDeAlta + '}';
+    }   
 }
